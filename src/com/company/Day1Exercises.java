@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Main {
+public class Day1Exercises {
 
     //Method for finding area and perimeter of a triangle
     static void TriangleAreaPerimeter(){
