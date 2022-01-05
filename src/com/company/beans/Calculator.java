@@ -1,8 +1,33 @@
-package com.company;
+package com.company.beans;
 
 public class Calculator {
     int num1;
     int num2;
+
+    public void setNum1(int arg) {
+        if (arg < 5) {
+            num1 = 5;
+            return;
+        }
+        if (arg > 20) {
+            num1 = 20;
+            return;
+        }
+        num1 = arg;
+    }
+
+    public void setNum2(int arg) {
+        if (arg < 5) {
+            num2 = 5;
+            return;
+        }
+        if (arg > 20) {
+            num2 = 20;
+            return;
+        }
+        num2 = arg;
+    }
+
     public int add() {
         int sum ;
         sum = num1 + num2;
