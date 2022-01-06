@@ -1,5 +1,7 @@
 package com.company.day2;
 
+import org.w3c.dom.ls.LSInput;
+
 import java.util.Scanner;
 
 public class Day2Exercise {
@@ -29,22 +31,23 @@ public class Day2Exercise {
 
     //Method for while loop with rate of interest in loan and EMI
     static void LoanEmiInterest() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the loan amount: ");
-        int loan = sc.nextInt();
-        System.out.println("Enter the EMI amount: ");
-        int emi = sc.nextInt();
-        System.out.println("Enter the interest rate: ");
-        int intRate = sc.nextInt();
+        int loan = 10000;
+        int emi = 1000;
         int noemis = 0;
+        double interestRate = 0;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the interest rate in decimal form (ex. (0.12)): ");
+        interestRate = sc.nextDouble();
 
         while( loan > 0 ) {
-            loan -= emi;
+            loan += ((interestRate/100) * loan) - emi;
             noemis ++;
             System.out.println("Paying "+emi+" of the installment "+noemis+"");
+            System.out.println("Remaining payment: " + loan);
         }
 
-        System.out.println("You are free from the loan after "+noemis+" installments and interest are paid.");
+        System.out.println("You are free from the loan after "+noemis+" installments are paid.");
     }
 
     //Method to display numbers from 1 to n (even or odd)
@@ -72,8 +75,8 @@ public class Day2Exercise {
      */
 
     public static void main(String[] args) {
-        //GreatestOf3();
+        GreatestOf3();
         LoanEmiInterest();
-        //EvenOrOdd();
+        EvenOrOdd();
     }
 }
