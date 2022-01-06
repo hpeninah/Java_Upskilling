@@ -1,4 +1,4 @@
-package com.company.day3;
+package com.company.day3.Employee;
 
 public class Manager extends Employee{
     private String qualification;
