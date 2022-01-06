@@ -7,6 +7,7 @@ public class Main {
         Supervisor supervisor = new Supervisor(17);
         Manager manager = new Manager("Completed 15 projects");
 
+        //Setting information for each class
         worker.setId(1);
         worker.setName("Worker Name");
 
@@ -22,9 +23,3 @@ public class Main {
         System.out.println("Supervisor ID is " + supervisor.getId() + " with name " + supervisor.getName() + " who has " + supervisor.getExperience() + " years of experience.");
     }
 }
-
-//Main class
-//Employee is superclass with id and name setter getters
-//Worker subclass
-//Supervisor subclass with experience (how many years) 15+ years
-//Manager subclass education 16-17 years education
