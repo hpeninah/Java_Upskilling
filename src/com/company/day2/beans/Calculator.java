@@ -1,9 +1,15 @@
-package com.company.beans;
+package com.company.day2.beans;
 
 public class Calculator {
     private int num1;
     private int num2;
     public static String brand;
+
+    public Calculator(){
+        System.out.println("instantiated");
+        num1 = 10;
+        num2 = 10;
+    }
 
     public void setNum1(int num1) {
         if (num1 < 5) {
@@ -42,4 +48,5 @@ public class Calculator {
         sum = num1 + num2;
         return sum;
     }
+
 }

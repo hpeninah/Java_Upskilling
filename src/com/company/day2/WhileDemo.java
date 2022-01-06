@@ -1,4 +1,4 @@
-package com.company;
+package com.company.day2;
 
 public class WhileDemo {
     public static void main(String[] args) {
