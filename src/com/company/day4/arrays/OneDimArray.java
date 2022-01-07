@@ -20,7 +20,6 @@ public class OneDimArray {
         }
 
         Arrays.sort(marks);
-        System.out.println("The maximum element is " + marks[0]);
-        System.out.println("The minimum element is " + marks[marks.length-1]);
+        System.out.println("The sum of the minimum and maximum element is " + (marks[0] + marks[marks.length-1]));
     }
 }
