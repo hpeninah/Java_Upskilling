@@ -101,17 +101,23 @@ public class Day1Exercises {
 
         if(option == 1){
             TriangleAreaPerimeter();
-        } else if(option == 2) {
+        }
+        if(option == 2) {
             RectangleAreaPerimeter();
-        } else if(option == 3) {
+        }
+        if(option == 3) {
             CircleAreaPerimeter();
-        } else if(option == 4) {
+        }
+        if(option == 4) {
             CelsiusToFahrenheit();
-        } else if(option == 5) {
+        }
+        if(option == 5) {
             FahrenheitToCelsius();
-        } else if(option == 6) {
+        }
+        if(option == 6) {
             InchToCent();
-        } else if(option == 7) {
+        }
+        if(option == 7) {
             CentToInch();
         } else {
             System.out.println("Not an option, please try again.");
