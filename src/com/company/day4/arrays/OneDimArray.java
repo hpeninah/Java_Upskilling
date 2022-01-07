@@ -3,7 +3,7 @@ package com.company.day4.arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class oneDimArray {
+public class OneDimArray {
     public static void main(String[] args) {
         int[] marks;
         Scanner sc = new Scanner(System.in);
