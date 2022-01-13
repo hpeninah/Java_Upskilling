@@ -1,7 +1,5 @@
 package com.company.day6.unitTest.beans;
 
-import lombok.Data;
-
 public class Calc {
 
     public static int add(int a, int b) {
